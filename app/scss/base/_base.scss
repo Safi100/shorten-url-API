@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Satisfy&display=swap');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: $font-size;
+    font-family:$main-font;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button,input{
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.toggle,button{
+    cursor: pointer;
+}
+
+.error_in_input{
+    border-color:red !important;
+}
+
+.hide{
+    display: none;
+}

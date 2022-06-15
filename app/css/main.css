@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Satisfy&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button, input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.toggle, button {
+  cursor: pointer;
+}
+
+.error_in_input {
+  border-color: red !important;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  -webkit-box-shadow: 0px -0.6rem 1.3rem black;
+          box-shadow: 0px -0.6rem 1.3rem black;
+  padding: 1.5rem 5%;
+}
+
+header .logo {
+  font-family: "Satisfy", cursive;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+header .toggle-text {
+  font-weight: 700;
+}
+
+main .banner {
+  padding: 5rem 5%;
+  padding-bottom: 10rem;
+}
+
+main .banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .wrapper > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .banner .right .heading-text {
+  font-size: 3.5rem;
+}
+
+main .banner .right .links-text {
+  position: relative;
+}
+
+main .banner .right .links-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  bottom: 1.2rem;
+}
+
+main .banner .left img {
+  width: 100%;
+  display: block;
+}
+
+main .shorten-links-section {
+  padding: 5rem 5%;
+}
+
+main .shorten-links-section .shorten_link_box {
+  margin-top: -10rem;
+  padding: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+main .shorten-links-section .shorten_link_box .input_and_button_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+main .shorten-links-section .shorten_link_box .input_and_button_box .shorten_input {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  padding: 1.1rem;
+  border: 0.3rem solid transparent;
+}
+
+main .shorten-links-section .shorten_link_box .input_and_button_box .shorten_button {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+main .shorten-links-section .shorten_link_box .error_message {
+  color: red;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+main .shorten-links-section .links_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+main .shorten-links-section .links_nav .no_links_text {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+main .shorten-links-section .links_nav .link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 962.5px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.7rem;
+}
+
+main .shorten-links-section .links_nav .link_box .original_link {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 40rem;
+  font-size: 1.9rem;
+}
+
+main .shorten-links-section .links_nav .link_box .new_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+main .shorten-links-section .links_nav .link_box .new_link_box .shorten_link {
+  font-size: 1.9rem;
+}
+
+main .shorten-links-section .links_nav .link_box .new_link_box .copy_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+main .testimonial {
+  text-align: center;
+}
+
+main .testimonial .wrapper {
+  padding: 5rem 5%;
+  padding-bottom: 0;
+}
+
+main .testimonial .section_name {
+  margin-bottom: 5rem;
+  word-spacing: 0.7rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  font-family: monospace;
+}
+
+main .testimonial .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .testimonial .col {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 2rem;
+  margin-bottom: 5%;
+}
+
+main .testimonial .col .user_img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+main .testimonial .col p::before, main .testimonial .col p::after {
+  content: open-quote;
+}
+
+@media screen and (max-width: 1000px) {
+  main .testimonial .wrapper .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .testimonial .wrapper .row .col {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .banner .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 3rem;
+  }
+  main .banner .left {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main .banner .right {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .shorten-links-section .wrapper .links_nav .link_box {
+    gap: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .testimonial .wrapper .section_name {
+    letter-spacing: 0.3rem;
+    word-spacing: unset;
+  }
+  main .testimonial .wrapper .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .testimonial .wrapper .row .col {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main .wrapper .shorten_link_box .input_and_button_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .wrapper .shorten_link_box .input_and_button_box button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 1rem 3rem;
+  }
+  main .new_link_box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: gray;
+}
+
+footer a {
+  font-weight: 700;
+}
+
+.Get_Started_btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.Light body {
+  background-color: #fafafa;
+}
+
+.Light body header {
+  background-color: #fff;
+}
+
+.Light body main .banner .right .links-text::after {
+  background-image: url(../../images/underline-light.png);
+}
+
+.Light body main .Get_Started_btn, .Light body main .copy_button {
+  background: #36be9a;
+  color: white;
+}
+
+.Light body main .shorten-links-section {
+  background: #e6e6e6;
+}
+
+.Light body main .shorten-links-section .shorten_link_box {
+  background: linear-gradient(45deg, #178165, #2b987b);
+}
+
+.Light body main .shorten-links-section .shorten_link {
+  color: #36be9a;
+}
+
+.Light body main .link_box {
+  background: #fff;
+}
+
+.Light body main .testimonial .col {
+  border-top: 0.3em solid #36be9a;
+  background: #eee;
+}
+
+.Light body footer {
+  background: #e6e6e6;
+}
+
+.Light body footer a {
+  color: #36be9a;
+}
+
+.Light .text {
+  color: #111517;
+}
+
+.Dark body {
+  background-color: #202c37;
+}
+
+.Dark body header {
+  background-color: #2b3945;
+}
+
+.Dark body main .banner .right .links-text::after {
+  background-image: url(../../images/underline-dark.png);
+}
+
+.Dark body main .Get_Started_btn, .Dark body main .copy_button {
+  background: #ffc300;
+  color: #fff;
+}
+
+.Dark body main .shorten-links-section {
+  background-color: #2b3945;
+}
+
+.Dark body main .shorten-links-section .shorten_link_box {
+  background: linear-gradient(45deg, #ffc300, #d1a000);
+}
+
+.Dark body main .shorten-links-section .shorten_link {
+  color: #ffc300;
+}
+
+.Dark body main .link_box {
+  background: #202c37;
+}
+
+.Dark body main .testimonial .col {
+  border-top: 0.3em solid #ffc300;
+  background: #2b3945;
+}
+
+.Dark body footer {
+  background-color: #2b3945;
+}
+
+.Dark body footer a {
+  color: #ffc300;
+}
+
+.Dark .text {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

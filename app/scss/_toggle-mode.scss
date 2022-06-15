@@ -1,0 +1,81 @@
+.Light{
+    body{
+        background-color: $light-background;
+        header{
+            background-color: $light-element;
+        }
+        main{
+            .banner{
+                .right{
+                    .links-text{
+                        &::after{
+                            background-image: url(../../images/underline-light.png);
+                        }
+                    }
+                }
+            }
+            .Get_Started_btn,.copy_button{
+                background: #36be9a;
+                color:white;
+            }
+            .shorten-links-section{
+                background: #e6e6e6;
+                .shorten_link_box{background: linear-gradient(45deg, #178165, #2b987b);}
+                .shorten_link{color: #36be9a;}
+            }
+            .link_box{background: $light-element;}
+            .testimonial{
+                .col{
+                    border-top: 0.3em solid #36be9a;
+                    background: #eee;
+                }
+            }
+        }
+        footer{
+            background: #e6e6e6;
+            a{color: #36be9a;}
+        }
+    }
+    .text{color:$light-text-color;}
+}
+
+.Dark{
+    body{
+        background-color: $dark-background;
+        header{
+            background-color: $dark-element;
+        }
+        main{
+            .banner{
+                .right{
+                    .links-text{
+                        &::after{
+                            background-image: url(../../images/underline-dark.png);
+                        }
+                    }
+                }
+            }
+            .Get_Started_btn,.copy_button{
+                background: #ffc300;
+                color: $dark-text-color;
+            }
+            .shorten-links-section{
+                background-color: $dark-element;
+                .shorten_link_box{background:linear-gradient(45deg, #ffc300, #d1a000);}
+                .shorten_link{color: #ffc300;}
+            }
+            .link_box{background: $dark-background;}
+            .testimonial{
+                .col{
+                    border-top: 0.3em solid #ffc300;
+                    background: $dark-element;
+                }
+            }
+        }
+        footer{
+            background-color: $dark-element;
+            a{color: #ffc300;}
+        }
+    }  
+    .text{color: $dark-text-color}
+}

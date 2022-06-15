@@ -1,0 +1,17 @@
+header{
+    box-shadow: 0px -0.6rem 1.3rem black;
+    padding: 1.5rem 5%;
+    .logo{
+        font-family: $logo-font;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggle{
+        display:flex;
+        align-items: center;
+        gap: 0.5rem;
+        &-text{font-weight: 700;}
+    }
+}
